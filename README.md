@@ -42,7 +42,8 @@ Minor modes are useful for multiple file types.
 
 ### Package manager, whooo! 
 
-`M-x package-list-packages` Mark packages to install with `i` and then install with `x`. 
+`M-x package-list-packages` Mark packages to install with `i` and then install with `x`.
+Open `~/.emacs.d/init.el` to do more customizations for emacs
 
 ### Editing
 
@@ -85,3 +86,19 @@ Or perhaps use `m-x replace-string` to replace text inside the region
 
 `c-j` New line and indent
 ``m-/` Hippy expand (auto-complete)
+
+### Links 
+
+- http://www.gnu.org/software/emacs/manual/html_node/emacs/index.html#Top The Emacs manual, dl PDF
+- https://www.masteringemacs.org/reading-guide Apparently one of the best resources
+- http://www.ic.unicamp.br/~helio/disciplinas/MC102/Emacs_Reference_Card.pdf Reference card
+- http://sachachua.com/blog/wp-content/uploads/2013/05/How-to-Learn-Emacs8.png Pretty picture
+
+
+### Windows
+
+`c-x o` switch window
+`c-x 1` delete all over windows (doesn't delete buffers)
+`c-x 2` split window horizonatlly
+`c-x 3` split window vertical
+`c-x 0` delete current window`
