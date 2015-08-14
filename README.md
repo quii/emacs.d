@@ -32,4 +32,14 @@ Notation for emacs commands is C for Ctrl and M is for Alt
 
 ### Commandy-stuff
 
-Keyboard shortcuts like the ones above are just mapped to commands. You can invoke a command just by doing M+x and typing the name. Just like sublime's lovely thing
+Keyboard shortcuts like the ones above are just mapped to commands. You can invoke a command just by doing M+x and typing the name. Just like sublime's lovely thing.
+
+### Modes
+
+Mode is a bunch of keybindings and functions to be more productive when editing different kinds of files. Modes are either major or minor. Major would be something language specific like clojure and are usually set when you open a file (but you can use M+x to set the mode manually).
+
+Minor modes are useful for multiple file types. 
+
+### Package manager, whooo! 
+
+`M-x package-list-packages` Mark packages to install with `i` and then install with `x`. 
