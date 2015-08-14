@@ -71,3 +71,17 @@ Minor modes are useful for multiple file types.
 `c-space` to mark and then move the point (using stuff above) to select more. You can then hit backspace to delete.
 
 Or perhaps use `m-x replace-string` to replace text inside the region
+
+### Cut, paste, etc
+
+`c-w` Kill region (cut)
+`m-w` Copy region to kill ring (copy)
+`c-y` yank (paste)
+`m-y` Cycle through kill ring after yanking
+`m-d` Kill word
+`c-k` Kill line
+
+### Other editing commands
+
+`c-j` New line and indent
+``m-/` Hippy expand (auto-complete)
