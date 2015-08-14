@@ -32,7 +32,7 @@ Notation for emacs commands is C for Ctrl and M is for Alt
 
 ### Commandy-stuff
 
-Keyboard shortcuts like the ones above are just mapped to commands. You can invoke a command just by doing M+x and typing the name. Just like sublime's lovely thing.
+Keyboard shortcuts like the ones above are just mapped to commands. You can invoke a command just by doing `M+x` and typing the name. Just like sublime's lovely thing.
 
 ### Modes
 
@@ -43,3 +43,21 @@ Minor modes are useful for multiple file types.
 ### Package manager, whooo! 
 
 `M-x package-list-packages` Mark packages to install with `i` and then install with `x`. 
+
+### Editing
+
+`c-y` pastes
+
+`c-k` deletes to the end of the line
+
+`c-/` is undo
+
+### Movement
+
+`c-a` move to beginning of line `c-e` move to end of line (just like bash)
+`m-m` move to first non whitespace letter
+`m-f` move forward one word `m b` move back one word
+`c-s` regex search. Hit again to move through the matches `c-r` does reverse search
+`m-<` moves to beginning `m->` moves to end
+`m-g g` go to line
+
