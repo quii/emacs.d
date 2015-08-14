@@ -27,3 +27,9 @@ Notation for emacs commands is C for Ctrl and M is for Alt
 `C-x b` allows you to nav open buffers or create a new one if you specify an unknown name
 
 `C-x k` will "kill" (delete) the buffer
+
+`C-x C-f` will open a file, use tab to make this less painful
+
+### Commandy-stuff
+
+Keyboard shortcuts like the ones above are just mapped to commands. You can invoke a command just by doing M+x and typing the name. Just like sublime's lovely thing
