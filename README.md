@@ -66,4 +66,8 @@ Minor modes are useful for multiple file types.
 
 `m-g g` go to line
 
+### Selection (marking regions)
 
+`c-space` to mark and then move the point (using stuff above) to select more. You can then hit backspace to delete.
+
+Or perhaps use `m-x replace-string` to replace text inside the region
