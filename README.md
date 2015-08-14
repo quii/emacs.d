@@ -55,9 +55,15 @@ Minor modes are useful for multiple file types.
 ### Movement
 
 `c-a` move to beginning of line `c-e` move to end of line (just like bash)
+
 `m-m` move to first non whitespace letter
+
 `m-f` move forward one word `m b` move back one word
+
 `c-s` regex search. Hit again to move through the matches `c-r` does reverse search
+
 `m-<` moves to beginning `m->` moves to end
+
 `m-g g` go to line
+
 
