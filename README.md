@@ -75,10 +75,8 @@ Or perhaps use `m-x replace-string` to replace text inside the region
 
 ### Cut, paste, etc
 
-`c-w` Kill region (cut)
-`m-w` Copy region to kill ring (copy)
-`c-y` yank (paste)
-`m-y` Cycle through kill ring after yanking
+`c-w` Kill region (cut) `m-w` Copy region (copy)
+`c-y` yank (paste) `m-y` Cycle through kill ring after yanking
 `m-d` Kill word
 `c-k` Kill line
 
@@ -102,3 +100,20 @@ Or perhaps use `m-x replace-string` to replace text inside the region
 `c-x 2` split window horizonatlly
 `c-x 3` split window vertical
 `c-x 0` delete current window`
+
+### Git
+
+`m-x magit-status` is synonumous with git status. Remember you can close all "windows" (different from buffers!) with q.
+
+You can move the cursor thing to the modified files and hit `tab` to see what changes you've made
+
+`c` opens the commit menu.
+
+### Commit and push
+
+Once you're in the commit menu do `-a` to enable "all" then type `c` again to do commit. Type your commit message and then `C-c C-c` to save it.
+
+To just commit certain files, hit `s` on selected files. `S` will select all.
+
+To ammend a commit use `e` instead of `c`
+
