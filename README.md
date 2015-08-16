@@ -117,3 +117,5 @@ To just commit certain files, hit `s` on selected files. `S` will select all.
 
 To ammend a commit use `e` instead of `c`
 
+To push do `P-P`
+
