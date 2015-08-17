@@ -119,3 +119,6 @@ To ammend a commit use `e` instead of `c`
 
 To push do `P-P`
 
+### Capitalise
+
+`c-x c-u`
