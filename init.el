@@ -130,3 +130,4 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+(put 'upcase-region 'disabled nil)

@@ -73,6 +73,8 @@ Open `~/.emacs.d/init.el` to do more customizations for emacs
 
 Or perhaps use `m-x replace-string` to replace text inside the region
 
+Select all is `c-x h`
+
 ### Cut, paste, etc
 
 `c-w` Kill region (cut) `m-w` Copy region (copy)
