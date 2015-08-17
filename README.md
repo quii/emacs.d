@@ -107,9 +107,13 @@ Select all is `c-x h`
 
 `m-x magit-status` is synonumous with git status. Remember you can close all "windows" (different from buffers!) with q.
 
-You can move the cursor thing to the modified files and hit `tab` to see what changes you've made
+You can move the cursor thing to the modified files and hit `tab` to see what changes you've made. Within this you can press `s` to stage or `i` to add to `.gitignore`. `k` will discard uncommited changes to a file.
 
 `c` opens the commit menu.
+
+`F` opens the pull menu
+
+`c-x v L` is history `l` is verbose history
 
 ### Commit and push
 
@@ -121,6 +125,3 @@ To ammend a commit use `e` instead of `c`
 
 To push do `P-P`
 
-### Capitalise
-
-`c-x c-u`
