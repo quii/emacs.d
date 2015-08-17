@@ -2,8 +2,6 @@
 
 Based on https://github.com/flyingmachine/emacs-for-clojure
 
-osijfoweijfweoi
-
 ## stuff i like so far
 
 - Navigating files and buffers is a breeze
