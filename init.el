@@ -159,3 +159,10 @@
 	  (if this-win-2nd (other-window 1))))))
 
 (define-key ctl-x-4-map "t" 'toggle-window-split)
+
+;; CJ - This sucks, why cant i put this in the customizations thing?
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
