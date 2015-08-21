@@ -166,3 +166,6 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(add-hook 'cider-repl-mode-hook #'company-mode)
+(add-hook 'cider-mode-hook #'company-mode)

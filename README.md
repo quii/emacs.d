@@ -125,3 +125,6 @@ To ammend a commit use `e` instead of `c`
 
 To push do `P-P`
 
+### Font sizes
+
+`c-x c-+` increase font size `c-x c- -` to decrease
