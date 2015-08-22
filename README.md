@@ -16,6 +16,14 @@ I learn by writing things down.
 
 Notation for emacs commands is C for Ctrl and M is for Alt
 
+## Getting help `C-h` and...
+
+- `(key)` describes help for the key
+- `b` list the bindings for the current buffer
+- `m` describe mode
+
+## Basics
+
 `C-x C-s` saves the file (with this config you can also just do command+s like normal)
 
 `C-z` quits
@@ -115,7 +123,7 @@ You can move the cursor thing to the modified files and hit `tab` to see what ch
 
 `c-x v L` is history `l` is verbose history
 
-### Commit and push
+#### Commit and push
 
 Once you're in the commit menu do `-a` to enable "all" then type `c` again to do commit. Type your commit message and then `C-c C-c` to save it.
 
