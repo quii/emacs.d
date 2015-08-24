@@ -21,6 +21,7 @@ Notation for emacs commands is C for Ctrl and M is for Alt
 - `(key)` describes help for the key
 - `b` list the bindings for the current buffer
 - `m` describe mode
+- `?` help on help
 
 ## Basics
 
@@ -70,6 +71,8 @@ Open `~/.emacs.d/init.el` to do more customizations for emacs
 `C-v` moves down a page
 
 `M-v` moves up a page
+
+`C-M-v` scrolls a page in a different window
 
 `C-l` centers page on cursor
 
