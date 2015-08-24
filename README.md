@@ -61,39 +61,49 @@ Open `~/.emacs.d/init.el` to do more customizations for emacs
 
 `c-/` is undo
 
+### Query replace
+
+`M-% string RET newstring RET`
+
 ### Movement
 
-`c-a` move to beginning of line `c-e` move to end of line (just like bash)
+`C-v` moves down a page
+
+`M-v` moves up a page
+
+`C-l` centers page on cursor
+
+`C-a` move to beginning of line `C-e` move to end of line (just like bash)
 
 `m-m` move to first non whitespace letter
 
 `m-f` move forward one word `m b` move back one word
 
-`c-s` regex search. Hit again to move through the matches `c-r` does reverse search
+`C-s` regex search. Hit again to move through the matches `C-r` does reverse search
 
-`m-<` moves to beginning `m->` moves to end
+`M-<` moves to beginning `M->` moves to end
 
-`m-g g` go to line
+`M-g g` go to line
 
 ### Selection (marking regions)
 
-`c-space` to mark and then move the point (using stuff above) to select more. You can then hit backspace to delete.
+`C-space` to mark and then move the point (using stuff above) to select more. You can then hit backspace to delete.
 
-Or perhaps use `m-x replace-string` to replace text inside the region
+Or perhaps use `M-x replace-string` to replace text inside the region
 
-Select all is `c-x h`
+Select all is `C-x h`
 
 ### Cut, paste, etc
 
-`c-w` Kill region (cut) `m-w` Copy region (copy)
-`c-y` yank (paste) `m-y` Cycle through kill ring after yanking
-`m-d` Kill word
-`c-k` Kill line
+`C-w` Kill region (cut) `M-w` Copy region (copy)
+`C-y` yank (paste) `M-y` Cycle through kill ring after yanking
+`M-d` Kill word
+`C-k` Kill line
 
 ### Other editing commands
 
-`c-j` New line and indent
-``m-/` Hippy expand (auto-complete)
+`C-j` New line and indent
+``M-/` Hippy expand (auto-complete)
 
 ### Links 
 
@@ -105,15 +115,15 @@ Select all is `c-x h`
 
 ### Windows
 
-`c-x o` switch window
-`c-x 1` delete all over windows (doesn't delete buffers)
-`c-x 2` split window horizonatlly
-`c-x 3` split window vertical
-`c-x 0` delete current window`
+`C-x o` switch window
+`C-x 1` delete all over windows (doesn't delete buffers)
+`C-x 2` split window horizonatlly
+`C-x 3` split window vertical
+`C-x 0` delete current window`
 
 ### Git
 
-`m-x magit-status` is synonumous with git status. Remember you can close all "windows" (different from buffers!) with q.
+`M-x magit-status` is synonumous with git status. Remember you can close all "windows" (different from buffers!) with q.
 
 You can move the cursor thing to the modified files and hit `tab` to see what changes you've made. Within this you can press `s` to stage or `i` to add to `.gitignore`. `k` will discard uncommited changes to a file.
 
@@ -121,7 +131,7 @@ You can move the cursor thing to the modified files and hit `tab` to see what ch
 
 `F` opens the pull menu
 
-`c-x v L` is history `l` is verbose history
+`C-x v L` is history `l` is verbose history
 
 #### Commit and push
 
@@ -135,4 +145,4 @@ To push do `P-P`
 
 ### Font sizes
 
-`c-x c-+` increase font size `c-x c- -` to decrease
+`C-x C-+` increase font size `C-x C- -` to decrease
