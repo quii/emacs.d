@@ -171,4 +171,8 @@
 (add-hook 'cider-mode-hook #'company-mode)
 
 (add-to-list 'default-frame-alist
-             '(font . "DejaVu Sans Mono-14"))
+             '(font . "DejaVu Sans Mono-16"))
+
+;; load solarized color theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'solarized-dark t)
