@@ -127,6 +127,9 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; golang
+(load "rename-go.el")
+
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
@@ -194,3 +197,5 @@
 (ac-config-default)
 
 (add-hook 'before-save-hook #'gofmt-before-save)
+
+(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")

@@ -161,5 +161,18 @@ This has a number of plugins installed to make this nice. You will need the foll
     go get -u github.com/dougm/goflymake
     go get -u github.com/nsf/gocode
     go get github.com/rogpeppe/godef
+    go get golang.org/x/tools/cmd/oracle
 
-This does gofmt on save and lots of other nice stuff like `M-x go-play-buffer` to copy buffer to the playground, `C-c C-j` to jump to definition `C-c C-d` to see a function's signature `C-c C-a` to add imports  
+This does gofmt on save and lots of other nice stuff like `M-x go-play-buffer` to copy buffer to the playground, `C-c C-j` to jump to definition `C-c C-d` to see a function's signature `C-c C-a` to add imports
+
+To compile do `C-c p c`.
+
+To see callers of a function do
+
+`M-x go-oracle-set-scope`
+
+e.g. github.com/quii/blog
+
+And then on any symbol you can find callers with `M-x go-oracle-callers`
+
+You can also safely rename symbols with `M-x go-rename`
