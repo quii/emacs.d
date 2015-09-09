@@ -149,3 +149,17 @@ To push do `P-P`
 ### Font sizes
 
 `C-x C-+` increase font size `C-x C- -` to decrease
+
+## Golang
+
+https://github.com/dominikh/go-mode.el
+https://github.com/dougm/goflymake - Syntax checking
+https://github.com/nsf/gocode - Autocomplete
+
+This has a number of plugins installed to make this nice. You will need the following go gets to be run
+
+    `go get -u github.com/dougm/goflymake`
+    `go get -u github.com/nsf/gocode`
+    `go get github.com/rogpeppe/godef`
+
+This does gofmt on save and lots of other nice stuff like `M-x go-play-buffer` to copy buffer to the playground, `C-c C-j` to jump to definition `C-c C-d` to see a function's signature `C-c C-a` to add imports  

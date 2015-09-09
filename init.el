@@ -176,3 +176,21 @@
 ;; load solarized color theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'solarized-dark t)
+
+; loads path from shell
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize)
+  (exec-path-from-shell-copy-env "GOPATH"))
+
+; need to: go get -u github.com/dougm/goflymake
+(add-to-list 'load-path "~/go/src/github.com/dougm/goflymake")
+(require 'go-flymake)
+(add-to-list 'load-path "~/gocode/src/github.com/dougm/goflymake")
+(require 'go-flycheck)
+
+(load "go-autocomplete.el")
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+(add-hook 'before-save-hook #'gofmt-before-save)
