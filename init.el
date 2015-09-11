@@ -173,8 +173,9 @@
 (add-hook 'cider-repl-mode-hook #'company-mode)
 (add-hook 'cider-mode-hook #'company-mode)
 
+; http://sourcefoundry.org/hack/
 (add-to-list 'default-frame-alist
-             '(font . "DejaVu Sans Mono-14"))
+             '(font . "Hack-14"))
 
 ;; load solarized color theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
