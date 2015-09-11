@@ -94,3 +94,17 @@ the `gorename' tool. With FORCE, call `gorename' with the
                             (buffer-substring (point-min) (point-max))))
 
 (provide 'go-rename)
+
+(add-to-list 'load-path "~/go/src/github.com/dougm/goflymake")
+(require 'go-flymake)
+(add-to-list 'load-path "~/gocode/src/github.com/dougm/goflymake")
+(require 'go-flycheck)
+
+(load "go-autocomplete.el")
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+(add-hook 'before-save-hook #'gofmt-before-save)
+
+(load-file "~/go/src/golang.org/x/tools/cmd/oracle/oracle.el")

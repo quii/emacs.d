@@ -1,3 +1,5 @@
+;; When editing this file if you want to see the change just do C-x C-e on the sexp to load it, rather than reloading everything. If you do want to reload everything just do M-x load-file
+
 ;;;;
 ;; Packages
 ;;;;
@@ -131,7 +133,7 @@
 (load "markdown.el")
 
 ;; golang
-(load "rename-go.el")
+(load "golang.el")
 
 ;; Langauage-specific
 (load "setup-clojure.el")
@@ -181,18 +183,3 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-env "GOPATH"))
-
-; need to: go get -u github.com/dougm/goflymake
-(add-to-list 'load-path "~/go/src/github.com/dougm/goflymake")
-(require 'go-flymake)
-(add-to-list 'load-path "~/gocode/src/github.com/dougm/goflymake")
-(require 'go-flycheck)
-
-(load "go-autocomplete.el")
-(require 'go-autocomplete)
-(require 'auto-complete-config)
-(ac-config-default)
-
-(add-hook 'before-save-hook #'gofmt-before-save)
-
-(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
