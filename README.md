@@ -2,6 +2,11 @@
 
 Based on https://github.com/flyingmachine/emacs-for-clojure
 
+## Stuff you'll need for this to work
+
+- http://sourcefoundry.org/hack/ (font)
+
+
 ## stuff i like so far
 
 - Navigating files and buffers is a breeze
@@ -151,6 +156,8 @@ To push do `P-P`
 `C-x C-+` increase font size `C-x C- -` to decrease
 
 ## Golang
+
+All the configuration assumes the $GOPATH is set to ~/go. Can and should fix this.
 
 https://github.com/dominikh/go-mode.el
 https://github.com/dougm/goflymake - Syntax checking
