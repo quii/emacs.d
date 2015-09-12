@@ -119,6 +119,7 @@
 ;; These customizations change the way emacs looks and disable/enable
 ;; some user interface elements
 (load "ui.el")
+(load "toggle-window-split.el")
 
 ;; These customizations make editing a bit nicer.
 (load "editing.el")
