@@ -2,20 +2,12 @@
 
 Based on https://github.com/flyingmachine/emacs-for-clojure
 
+I will write interesting stuff here as i learn it.
+
 ## Stuff you'll need for this to work
 
 - http://sourcefoundry.org/hack/ (font)
-
-
-## stuff i like so far
-
-- Navigating files and buffers is a breeze
-- Installing packages is as pleasant as sublime text
-- Tab auto-completion like bash is nice
-
-## wut?
-
-I learn by writing things down.
+- Bind caps lock to ctrl, as its more comfortable
 
 ## Commands as I learn them..
 
@@ -23,10 +15,14 @@ Notation for emacs commands is C for Ctrl and M is for Alt
 
 ## Getting help `C-h` and...
 
-- `(key)` describes help for the key
+- `i` general documentation
+- `a` which is apropos is like search for help. This looks for a command. `d` will look for documentation
 - `b` list the bindings for the current buffer
 - `m` describe mode
+- `f` describe function
+- `k` describe key
 - `?` help on help
+- `prefix-command C-h` will give help on that prefix, i.e `C-x C-h`
 
 ## Basics
 
@@ -36,9 +32,27 @@ Notation for emacs commands is C for Ctrl and M is for Alt
 
 `C-g` Stops a command if you mess up
 
+## Modifiers
+
+Commands can have alternate states which is done by the 'universal modifier' `C-u` 
+
+So if you type `C-u 8 a` it will print a 8 times
+
+`C-u 2 M-d` will delete two words
+
+### Tempo
+
+Related to modifiers the number keys can act as modifiers
+
+`M-d` deletes previous word. Note that negativity reverses directions of commands, so apparently can be used to be the opposite of uppercasing a word
+`M-2-d` deletes 2 previous words
+`C-3-f` moves forward 3 characters
+
 ### Buffers
 
 `C-x b` allows you to nav open buffers or create a new one if you specify an unknown name
+
+`C-x 4 b` will open the buffer in the "other" window and set it as the current one
 
 `C-x k` will "kill" (delete) the buffer
 
@@ -61,11 +75,13 @@ Open `~/.emacs.d/init.el` to do more customizations for emacs
 
 ### Editing
 
-`c-y` pastes
+`C-y` pastes
 
-`c-k` deletes to the end of the line
+`C-k` deletes to the end of the line
 
-`c-/` is undo
+`C-/` is undo
+
+`C-d` delete char `M-d` delete word
 
 ### Query replace
 
@@ -83,9 +99,11 @@ Open `~/.emacs.d/init.el` to do more customizations for emacs
 
 `C-a` move to beginning of line `C-e` move to end of line (just like bash)
 
-`m-m` move to first non whitespace letter
+`m-m` move to first non whitespace letter. REMEMBER ME
 
 `m-f` move forward one word `m b` move back one word
+
+`C-n` next line `C-p` previous line 
 
 `C-s` regex search. Hit again to move through the matches `C-r` does reverse search
 

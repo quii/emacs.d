@@ -70,3 +70,5 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+(global-set-key (kbd "M-o") 'other-window)
