@@ -83,6 +83,8 @@ Open `~/.emacs.d/init.el` to do more customizations for emacs
 
 `C-d` delete char `M-d` delete word
 
+`C-S-backspace` deletes line
+
 ### Query replace
 
 `M-% string RET newstring RET`
