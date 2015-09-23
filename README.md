@@ -58,6 +58,8 @@ Related to modifiers the number keys can act as modifiers
 
 `C-x C-f` will open a file, use tab to make this less painful
 
+`C-x-left` and `C-x-right` moves between previous/next buffers
+
 ### Commandy-stuff
 
 Keyboard shortcuts like the ones above are just mapped to commands. You can invoke a command just by doing `M+x` and typing the name. Just like sublime's lovely thing.
@@ -112,6 +114,8 @@ Open `~/.emacs.d/init.el` to do more customizations for emacs
 `M-<` moves to beginning `M->` moves to end
 
 `M-g g` go to line
+
+`C-x C-SPC` "pop-global-mark" (goes back)
 
 ### Selection (marking regions)
 
