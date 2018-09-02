@@ -133,9 +133,6 @@
 ;; Markdown
 (load "markdown.el")
 
-;; golang
-(load "golang.el")
-
 ;; clojure
 (load "setup-clojure.el")
 
