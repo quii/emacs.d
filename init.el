@@ -172,3 +172,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; clisp bollocks
+(load (expand-file-name "~/.roswell/helper.el"))
+
+(setq inferior-lisp-program "ros -Q run")
